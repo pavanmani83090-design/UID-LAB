@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pavan Hotels - Gallery</title>
+        <style>
+            header {
+                text-align: center;
+                background-color: antiquewhite;
+                color: rgb(29, 23, 108);
+                padding: 20px;
+            }
+
+            nav {
+                text-align: center;
+                padding: 10px;
+                background-color: rgb(16, 16, 75)
+            }
+
+            nav button {
+                background-color: transparent;
+                border: none;
+                color: white;
+                font-size: 20px;
+                margin: 0 10px;
+                cursor: pointer;
+            }
+
+            nav button:hover {
+                background-color: blanchedalmond;
+                color: rgb(30, 30, 94);
+                text-decoration: underline;
+            }
+
+            h1{
+                color:#333;
+            }
+
+            .gallery{
+                display:flex;
+                justify-content:center;
+                flex-wrap:wrap;
+                gap:20px;
+                padding:20px;
+                background-color: antiquewhite;
+            }
+            
+            .card{
+                background:white;
+                border-radius:10px;
+                box-shadow:0px 4px 10px rgba(0,0,0,0.2);
+                width:250px;
+            }
+            .card img{
+                width:100%;
+                height:180px;
+            }
+
+            .card h3{
+                padding:10px;
+            }
+        footer{
+            background-color:rgb(7, 8, 74);
+            color: rgb(234, 235, 182);
+            padding: 10px;
+        }
+        
+        img{
+            width: 100px;
+            height: auto;
+        }
+        footer p{
+            text-align: center;
+            margin-top: 10px;
+        }
+        </style>
+</head>
+
+<body>
+   <header>
+            <h1>Pavan Hotels</h1>
+    </header>
+    <nav>              
+        <button onclick="window.location.href='5b.html'">Home</button>
+        <button onclick="window.location.href='booking.html'">Booking</button>
+        <button onclick="window.location.href='gallery.html'">Amenities</button>
+        <button onclick="window.location.href='about.html'">About Us</button>
+        </nav>
+
+<div class="gallery">
+
+    <div class="card">
+    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945">
+    <h3>Hotel Exterior🏨</h3>
+    </div>
+
+    <div class="card">
+    <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427">
+    <h3>Luxury Room🛌</h3>
+    </div>
+
+    <div class="card">
+    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9">
+    <h3>Restaurant🍴</h3>
+    </div>
+
+    <div class="card">
+    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d">
+    <h3>Swimming Pool'🏊</h3>
+    </div>
+
+    <div class="card">
+    <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c">
+    <h3>Fitness Center🏋️</h3>
+    </div>
+    <div class="card">
+    <img src="https://cdn-icons-png.flaticon.com/512/93/93158.png">
+    <h3>Free Wifi</h3>
+    </div>
+    <div class="card">
+    <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461" width="250">
+    <h3>24/7 Room Service available</h3>
+    </div>  
+    </div>
+    <footer>
+        <p>©️ 2024 Amrita Hotels. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

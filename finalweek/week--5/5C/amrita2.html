@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Amrita Website</title>
+    </head>
+    <body><style>
+        .header{
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .campus{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .campus-btn{
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: lightblue;
+            border: none;
+            cursor: pointer;
+        }
+        .campus-btn:hover{
+            background-color: blue;
+            color: white;
+        }
+        .container{
+            display: flex;
+            justify-content:left;
+            margin-top: 20px;
+            gap: 20px;
+            padding: 20px;
+        }
+        .campuses{
+            display:none;
+                padding: 20px;
+                border: 1px solid black;
+                border-radius: 9px;
+                width: 600px;
+                height: 700px;
+        }
+        .campuses:target{
+            display:block;
+        }
+        .img{
+            width: 600px;
+            height:500px;
+        }
+
+        
+        body:not(:has(:target)) #amaravati {
+    display: block;
+}
+        
+    </style>
+        <div class="header">
+            Amrita University
+        </div>
+        <div class="campus">
+            <a href="#amaravati">Amaravati Campus</a>
+            <a href="#coimbatore">Coimbatore Campus</a>
+            <a href="#bengaluru">Bengaluru Campus</a>
+            <a href="#kochi">Kochi Campus</a>
+        </div>
+        <div class="container">
+            <div class="sidebar">
+                <iframe src="college.html" width="500" height="900">
+                </iframe>
+            </div>
+            <div class="main">
+                <div class="campuses" id="amaravati">
+                    <h2>Amaravati Campus</h2>
+                    <p>Amaravati Campus is located in the capital city of Andhra Pradesh. It offers various undergraduate and postgraduate courses in engineering, management, and arts.</p>
+                    <img class="img" src="https://aeee.amrita.edu/wp-content/uploads/2025/09/Amaravati-Campus_edited.jpg" alt="amarvathi">
+                </div>
+                <div class="campuses" id="coimbatore">
+                    <h2>Coimbatore Campus</h2>
+                    <p>Coimbatore Campus is located in the city of Coimbatore, Tamil Nadu. It offers various undergraduate and postgraduate courses in engineering, management, and arts.</p>
+                    <img class="img" src="https://webfiles.amrita.edu/2020/06/hyKlkquw-790-100.jpg" alt="coimbatore">
+                </div>
+                <div class="campuses" id="bengaluru">
+                    <h2>Bengaluru Campus</h2>
+                    <p>Bengaluru Campus is located in the city of Bengaluru, Karnataka. It offers various undergraduate and postgraduate courses in engineering, management, and arts.</p>
+                    <img class="img" src="https://webfiles.amrita.edu/2020/08/G4JiCpQi-790-75.jpg" alt="bengaluru">
+                </div>
+                <div class="campuses" id="kochi">
+                    <h2>Kochi Campus</h2>
+                    <p>Kochi Campus is located in the city of Kochi, Kerala. It offers various undergraduate and postgraduate courses in engineering, management, and arts.</p>
+                    <img class="img" src="https://webfiles.amrita.edu/2022/03/UFu6B2t0-amaravati-campus-images-001.jpg" alt="Amrita University Campus" >
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

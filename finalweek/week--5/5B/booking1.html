@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pavan Hotels - Booking</title>
+    <style>
+        header {
+            text-align: center;
+            background-color: antiquewhite;
+            color: black;
+            padding: 20px;
+        }
+
+        nav {
+            text-align: center;
+            padding: 10px;
+            background-color: rgb(16, 16, 75)
+        }
+
+        nav button {
+            background-color: transparent;
+            border: none;
+            color: white;
+            font-size: 20px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        nav button:hover {
+            background-color: blanchedalmond;
+            color: rgb(30, 30, 94);
+            text-decoration: underline;
+        }
+        section h2{
+            font-size: 40px;
+        }
+        form{
+            width: 50%;
+            box-shadow: 0px 0px 10px black;
+            padding: 30px;
+            margin: auto;
+            background-color: antiquewhite;
+            font-size: 20px;
+        }
+        form button {
+            background-color: rgb(16, 16, 75);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        form button:hover {
+            background-color: blanchedalmond;
+            color: rgb(30, 30, 94);
+            text-decoration: underline;
+        }
+        section h2{
+            text-align: center;
+            color: rgb(16, 16, 75);
+        }
+        td{
+            padding: 10px;
+        }
+
+        input, select, textarea{
+            width:100%;
+            padding: 10px;
+            border-radius:5px;
+            border:1px solid gray;
+        }
+        footer{
+            background-color:rgb(7, 8, 74);
+            color: rgb(234, 235, 182);
+            padding: 10px;
+        }
+        footer div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            width: auto;
+        }
+        img{
+            width: 100px;
+            height: auto;
+        }
+        footer p{
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> Pavan Hotels</h1>
+    </header>
+    <nav>
+        <button onclick="window.location.href='5b.html'">Home</button>
+        <button onclick="window.location.href='booking.html'">Booking</button>
+        <button onclick="window.location.href='gallery.html'">Amenities</button>
+        <button onclick="window.location.href='about.html'">About Us</button>
+    </nav>
+    <section>
+        <h2>Book Your stay in Amrita Hotels</h2>
+        <form onsubmit="alert('Your booking request has been submitted successfully! We will contact you for further process.')">
+            <table>
+                <tr>
+                    <td>
+                        <label for="name">Full name</label>
+                    </td>
+                    <td>
+                        <input type="text" id="fname" name="fullname" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email</label>
+                    </td>
+                    <td>
+                        <input type="email" id="email" name="email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="number">Phone Number</label>
+                    </td>
+                    <td>
+                        <input type="tel" id="number" name="number" pattern="[0-9]{10}" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="checkin">Check-in Date</label>
+                    </td>
+                    <td>
+                        <input type="date" id="checkin" name="checkin" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="checkout">Check-out Date</label>
+                    </td>
+                    <td>
+                        <input type="date" id="checkout" name="checkout" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="room">Room Type</label>
+                    </td>
+                    <td>
+                        <select id="room" name="room" required> select room type
+                            <option value="Single">Single</option>
+                            <option value="Double">Double</option>
+                            <option value="Suite">Suite</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="guests">Number of Guests</label>
+                    </td>
+                    <td>
+                        <input type="number" id="guests" name="guests" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="requests">Special Requests</label>
+                    </td>
+                    <td>
+                        <textarea id="requests" name="requests"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <p>©️ 2024 Amrita Hotels. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

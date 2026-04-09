@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            font-family: Arial;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2{
+            text-align: center;
+        }
+
+        /* GRID LAYOUT */
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 columns */
+            gap: 20px;
+        }
+
+        .product{
+            border:1px solid black;
+            padding:20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        img{
+            width: 300px;
+        }
+
+        button{
+            background-color: lightgreen;
+            padding:10px;
+            border:none;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Clothing</h2>
+
+    <div class="container">
+
+        <div class="product">
+            <p>Product 1: $49.99</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN-Wye8awl0a1gi8voWyYR8fZ1YwP5R_mv9w&s">
+            <br><br>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="product">
+            <p>Product 2: $29.99</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN-Wye8awl0a1gi8voWyYR8fZ1YwP5R_mv9w&s">
+            <br><br>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="product">
+            <p>Product 3: $39.99</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN-Wye8awl0a1gi8voWyYR8fZ1YwP5R_mv9w&s">
+            <br><br>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="product">
+            <p>Product 4: $19.99</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN-Wye8awl0a1gi8voWyYR8fZ1YwP5R_mv9w&s">
+            <br><br>
+            <button>Buy Now</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
