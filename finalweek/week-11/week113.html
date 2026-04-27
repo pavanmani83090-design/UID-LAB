@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mobile Number Validation</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+        #msg {
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Enter Mobile Number</h2>
+
+    Mobile: <input type="text" id="mobile" onblur="validateMobile()">
+    <p id="msg"></p>
+
+    <script>
+        function validateMobile() {
+            let mobile = document.getElementById("mobile").value;
+            let msg = document.getElementById("msg");
+
+            // Check exactly 10 digits
+            let pattern = /^[0-9]{10}$/;
+
+            if (pattern.test(mobile)) {
+                msg.innerHTML = "✓ Valid Mobile Number";
+                msg.style.color = "green";
+            } else {
+                msg.innerHTML = "Invalid! Enter exactly 10 digits";
+                msg.style.color = "red";
+            }
+        }
+    </script>
+
+</body>
+</html>

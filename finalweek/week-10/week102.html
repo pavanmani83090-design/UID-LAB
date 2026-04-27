@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Largest of five numbers</h1>
+        Enter number 1:<input type="text" id="num1">
+        Enter number 2:<input type="text" id="num2">
+        Enter number 3:<input type="text" id="num3">
+        Enter number 4:<input type="text" id="num4">
+        Enter number 5:<input type="text" id="num5">
+        <input type="button" onclick="AddFunction()" value="large">
+        <script>
+            function AddFunction(){
+            let a=Number(document.getElementById("num1").value);
+            let b=Number(document.getElementById("num2").value);
+            let c=Number(document.getElementById("num3").value)
+            let d=Number(document.getElementById("num4").value);
+            let e=Number(document.getElementById("num5").value);
+            let largest;
+            if(a>=b&&a>=c&&a>=d&&a>=e){
+                largest=a;
+            }
+            else if(b>=a && b>=c&& b>=d && b>=e){
+                largest=b;
+            }
+            else if(c>=a && c>=b && c>=d && c>=e){
+                largest=c;
+            }
+            else if(d>=a && d>=b && d>=c && d>=e){
+                largest=d;
+            }
+            else if(e>=a && e>=b && e>=c && e>=d ){
+                largest=e;
+            }
+            alert("Largest of five numbers is: "+largest);
+        }
+        </script>
+    </body>
+</html>

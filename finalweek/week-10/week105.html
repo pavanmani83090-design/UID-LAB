@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grade Calculation</title>
+    <script>
+        function calculateGrade() {
+            let s1 = parseFloat(document.forms["gradeForm"]["sub1"].value);
+            let s2 = parseFloat(document.forms["gradeForm"]["sub2"].value);
+            let s3 = parseFloat(document.forms["gradeForm"]["sub3"].value);
+            let s4 = parseFloat(document.forms["gradeForm"]["sub4"].value);
+            let s5 = parseFloat(document.forms["gradeForm"]["sub5"].value);
+            let s6 = parseFloat(document.forms["gradeForm"]["sub6"].value);
+            if (isNaN(s1) || isNaN(s2) || isNaN(s3) || isNaN(s4) || isNaN(s5) || isNaN(s6)) {
+                alert("Please enter all subject marks!");
+                return;
+            }
+            let avg = (s1 + s2 + s3 + s4 + s5 + s6) / 6;
+            let grade;
+            if (avg >= 90) {
+                grade = "A+";
+            } else if (avg >= 80) {
+                grade = "A";
+            } else if (avg >= 70) {
+                grade = "B";
+            } else if (avg >= 60) {
+                grade = "C";
+            } else if (avg >= 50) {
+                grade = "D";
+            } else {
+                grade = "F";
+            }
+            alert("Average Marks = " + avg.toFixed(2) + "\nGrade = " + grade);
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Student Grade Calculator</h2>
+
+    <form name="gradeForm">
+        Subject 1: <input type="text" name="sub1"><br><br>
+        Subject 2: <input type="text" name="sub2"><br><br>
+        Subject 3: <input type="text" name="sub3"><br><br>
+        Subject 4: <input type="text" name="sub4"><br><br>
+        Subject 5: <input type="text" name="sub5"><br><br>
+        Subject 6: <input type="text" name="sub6"><br><br>
+
+        <input type="button" value="Calculate Grade" onclick="calculateGrade()">
+    </form>
+</body>
+</html>

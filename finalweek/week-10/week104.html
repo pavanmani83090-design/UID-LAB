@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        Enter number:<input type="text" id="num"><br><br>
+        <input type="button" value="check" onclick="checkNumber()" >
+        <script>
+            function checkNumber(){
+                let n=parseInt(document.getElementById("num").value);
+                let output=" ";
+                
+                    if(n%3===0 && n%5===0){
+                        output="LOL-OK";
+                    }
+                    else if(n%3===0){
+                        output="LOL";
+                    }
+                    else if(n%5===0){
+                        output="Ok";
+                    }
+                    else{
+                        output=n;
+                    }
+                alert(output);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign of Product</title>
+    </head>
+    <body>
+        <div>
+            Enter Number 1:<input type="text" id="num1"><br>
+            Enter Number 2:<input type="text" id="num2"><br>
+            Enter Number 3:<input type="text" id="num3"><br>
+            <input type="button" onclick="myFunction()" value="Calculate">
+        </div>
+        <script>
+            function myFunction(){
+                let a=Number(document.getElementById("num1").value);
+                let b=Number(document.getElementById("num2").value);
+                let c=Number(document.getElementById("num3").value);
+                let product=a * b * c;
+                if(product>0){
+                    alert("The sign is positve");
+                }
+                else if(product<0){
+                    alert("The sign is negative");
+                }
+                else{
+                    alert("The sign is zero");
+                }
+            }
+        </script>
+    </body>

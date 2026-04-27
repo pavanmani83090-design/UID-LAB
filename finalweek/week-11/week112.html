@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Strength Checker</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+        #strength {
+            font-weight: bold;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Password Strength Checker</h2>
+
+    Password: <input type="password" id="password" onkeyup="checkStrength()">
+    <p id="strength"></p>
+
+    <script>
+        function checkStrength() {
+            let password = document.getElementById("password").value;
+            let strengthText = document.getElementById("strength");
+
+            let strength = 0;
+
+            // Conditions
+            if (password.length >= 6) strength++;
+            if (/[A-Z]/.test(password)) strength++;   // uppercase
+            if (/[0-9]/.test(password)) strength++;   // numbers
+            if (/[@$!%*?&]/.test(password)) strength++; // special chars
+
+            // Display result
+            if (password.length === 0) {
+                strengthText.innerHTML = "";
+            }
+            else if (strength <= 2) {
+                strengthText.innerHTML = "Weak Password";
+                strengthText.style.color = "red";
+            } 
+            else {
+                strengthText.innerHTML = "Strong Password";
+                strengthText.style.color = "green";
+            }
+        }
+    </script>
+
+</body>
+</html>

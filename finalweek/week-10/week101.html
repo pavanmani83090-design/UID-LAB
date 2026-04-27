@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        Enter Number 1:<input type="text" id="num1"><br>
+        Enter Number 2:<input type="text" id="num2"><br>
+        Enter Number 3:<input type="text" id="num3"><br>
+        <input type="button" onclick="SortFunction()" value="Sort">
+        <script>
+            function SortFunction(){
+                let temp;
+                let a=Number(document.getElementById("num1").value);
+                let b=Number(document.getElementById("num2").value);
+                let c=Number(document.getElementById("num3").value);
+                if(a>b){
+                    temp=a;
+                    a=b;
+                    b=temp;
+                }
+                 else if(b>c){
+                    temp=b;
+                    b=c;
+                    c=temp;
+                }
+                  else if(a>c){
+                    temp=c;
+                    a=c;
+                    c=temp;
+                }
+                alert("the sort ascending order: "+a+" "+b+" "+c);
+            }
+        </script>
+    </body>
+</html>

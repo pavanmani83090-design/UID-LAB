@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        Enter number:<input type="text" id="num">
+        <input type="button" onclick="checkEven()" value="Check even or odd">
+        <script>
+            function checkEven(){
+                let n=document.getElementById("num").value;
+                let output=" ";
+                for(let i=0;i<=n;i++){
+                if(i%2===0){
+                    output+=i+"is Even\n";
+                }
+                else{
+                    output+=i+"is odd\n";
+                }
+            }
+            alert(output);
+        }
+        </script>
+    </body>
+</html>
